@@ -1,0 +1,21 @@
+{
+    "order": {
+        "id": 100478,
+        "firstName": "лЪпУчхИЮКвзДЗ",
+        "lastName": "ХьБВкЬ",
+        "address": "кёЪШЙыФВЁ",
+        "metroStation": "36",
+        "phone": "157727837798",
+        "rentTime": 4,
+        "deliveryDate": "2022-10-31T00:00:00.000Z",
+        "track": 716502,
+        "color": null,
+        "comment": "ЯНРтЛПЫПёЭЧ8яй9ЗЗЬЩ",
+        "cancelled": false,
+        "finished": false,
+        "inDelivery": false,
+        "createdAt": "2022-10-21T17:10:05.754Z",
+        "updatedAt": "2022-10-21T17:10:05.754Z",
+        "status": 0
+    }
+}

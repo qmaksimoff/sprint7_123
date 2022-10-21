@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="orders.OrdersAcceptTest" time="17.372" tests="6" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/admin/Documents/job/Sprint7_123/target/test-classes:/Users/admin/Documents/job/Sprint7_123/target/classes:/Users/admin/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/admin/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-junit4/2.19.0/allure-junit4-2.19.0.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-java-commons/2.19.0/allure-java-commons-2.19.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-model/2.19.0/allure-model-2.19.0.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-rest-assured/2.19.0/allure-rest-assured-2.19.0.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-attachments/2.19.0/allure-attachments-2.19.0.jar:/Users/admin/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured/5.2.0/rest-assured-5.2.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/admin/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/admin/.m2/repository/io/rest-assured/json-path/5.2.0/json-path-5.2.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured-common/5.2.0/rest-assured-common-5.2.0.jar:/Users/admin/.m2/repository/io/rest-assured/xml-path/5.2.0/xml-path-5.2.0.jar:/Users/admin/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/admin/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/admin/Documents/job/Sprint7_123/target/surefire/surefirebooter9439325929098075251.jar /Users/admin/Documents/job/Sprint7_123/target/surefire 2022-10-21T20-08-04_998-jvmRun1 surefire5599899102912519831tmp surefire_012861051538263010031tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/admin/Documents/job/Sprint7_123/target/test-classes:/Users/admin/Documents/job/Sprint7_123/target/classes:/Users/admin/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/admin/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-junit4/2.19.0/allure-junit4-2.19.0.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-java-commons/2.19.0/allure-java-commons-2.19.0.jar:/Users/admin/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-model/2.19.0/allure-model-2.19.0.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-rest-assured/2.19.0/allure-rest-assured-2.19.0.jar:/Users/admin/.m2/repository/io/qameta/allure/allure-attachments/2.19.0/allure-attachments-2.19.0.jar:/Users/admin/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured/5.2.0/rest-assured-5.2.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/admin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/admin/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/admin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/admin/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/admin/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/admin/.m2/repository/io/rest-assured/json-path/5.2.0/json-path-5.2.0.jar:/Users/admin/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/admin/.m2/repository/io/rest-assured/rest-assured-common/5.2.0/rest-assured-common-5.2.0.jar:/Users/admin/.m2/repository/io/rest-assured/xml-path/5.2.0/xml-path-5.2.0.jar:/Users/admin/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/admin/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/Users/admin/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:"/>
+    <property name="allure.results.directory" value="/Users/admin/Documents/job/Sprint7_123/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/admin"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/admin/Documents/job/Sprint7_123"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/admin/Documents/job/Sprint7_123/target/surefire/surefirebooter9439325929098075251.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.1+0"/>
+    <property name="user.name" value="admin"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.5.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/admin/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/yq/s60ngl_97bg242tjmkp3z1hm0000gq/T/"/>
+    <property name="java.version" value="18.0.1"/>
+    <property name="user.dir" value="/Users/admin/Documents/job/Sprint7_123"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="18.0.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="shouldNotAcceptOrderWithoutCourierId" classname="orders.OrdersAcceptTest" time="3.301"/>
+  <testcase name="shouldNotAcceptOrderWithoutOrderId" classname="orders.OrdersAcceptTest" time="3.046">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at orders.OrdersAcceptTest.shouldNotAcceptOrderWithoutOrderId(OrdersAcceptTest.java:67)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "ДГОащББдШ",
+    "lastName": "ЯющдЬгйжёНбЗИщДСжЖЙькТЛЫм",
+    "address": "УпЫ9У4ЪДЮЙФТэП1тцвгВ3М9Аё4",
+    "metroStation": 6,
+    "phone": "813682424150",
+    "rentTime": 3,
+    "deliveryDate": "2023-05-20",
+    "comment": "ТщАВжэ6ФщёЩи0хИы"
+}
+{
+    "track": 315129
+}
+HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 16
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Oct 2022 17:10:00 GMT
+ETag: W/"10-SKiTigC1BClmyZmH1doB06bAUDE"
+Set-Cookie: _yasc=kunk8H8z3kfKFEpWnFhSZaTKbavphTDgyZWfEpowoUXIPbL3blXAzxNoxUXu; domain=.praktikum-services.ru; path=/; expires=Mon, 18-Oct-2032 17:10:00 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1666372200434501-15676071128611400228
+
+{
+    "track": 315129
+}
+Request method:	GET
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/orders/track?t=315129
+Proxy:			<none>
+Request params:	<none>
+Query params:	t=315129
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "order": {
+        "id": 100476,
+        "firstName": "ДГОащББдШ",
+        "lastName": "ЯющдЬгйжёНбЗИщДСжЖЙькТЛЫм",
+        "address": "УпЫ9У4ЪДЮЙФТэП1тцвгВ3М9Аё4",
+        "metroStation": "6",
+        "phone": "813682424150",
+        "rentTime": 3,
+        "deliveryDate": "2023-05-20T00:00:00.000Z",
+        "track": 315129,
+        "color": null,
+        "comment": "ТщАВжэ6ФщёЩи0хИы",
+        "cancelled": false,
+        "finished": false,
+        "inDelivery": false,
+        "createdAt": "2022-10-21T17:10:00.490Z",
+        "updatedAt": "2022-10-21T17:10:00.490Z",
+        "status": 0
+    }
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Fri, 21 Oct 2022 17:10:00 GMT
+ETag: W/"1ea-UU/B10P4xBEgBddf3tSrM3Wrhr8"
+Set-Cookie: _yasc=Hecn1d235rEdjGLIEjSRcV7kjWngmBK4+MQ7f3h3dYTzMgsI+JC9fcETDYHg; domain=.praktikum-services.ru; path=/; expires=Mon, 18-Oct-2032 17:10:00 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1666372200733906-5322292427752859151
+Content-Type: application/json;charset=utf-8
+Content-Length: 490
+
+{
+    "order": {
+        "id": 100476,
+        "firstName": "ДГОащББдШ",
+        "lastName": "ЯющдЬгйжёНбЗИщДСжЖЙькТЛЫм",
+        "address": "УпЫ9У4ЪДЮЙФТэП1тцвгВ3М9Аё4",
+        "metroStation": "6",
+        "phone": "813682424150",
+        "rentTime": 3,
+        "deliveryDate": "2023-05-20T00:00:00.000Z",
+        "track": 315129,
+        "color": null,
+        "comment": "ТщАВжэ6ФщёЩи0хИы",
+        "cancelled": false,
+        "finished": false,
+        "inDelivery": false,
+        "createdAt": "2022-10-21T17:10:00.490Z",
+        "updatedAt": "2022-10-21T17:10:00.490Z",
+        "status": 0
+    }
+}
+Request method:	POST
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/courier
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "WYQ9ObCnzz2E",
+    "password": "password1234",
+    "firstName": "АэёЬэНВцНзйБЦЬхрВ"
+}
+{
+    "ok": true
+}
+HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Oct 2022 17:10:01 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=jxNm8xUGkEIhB2zkRXMnzIT4fHE7OBzZeBl5MLhqrWjyPCuW39KQKlR//qMC; domain=.praktikum-services.ru; path=/; expires=Mon, 18-Oct-2032 17:10:01 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1666372201188520-16223976270343000790
+
+{
+    "ok": true
+}
+Request method:	POST
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/courier/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "WYQ9ObCnzz2E",
+    "password": "password1234"
+}
+{
+    "id": 116477
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Oct 2022 17:10:01 GMT
+ETag: W/"d-1qlqozj50OpjMmNLFl2XQp0gphQ"
+Set-Cookie: _yasc=DS/lnj04+hBESFkHbh2fBx8elKVLPvPVTmSUneCS4dWRIdCeJ2Ny9ofbbMw3; domain=.praktikum-services.ru; path=/; expires=Mon, 18-Oct-2032 17:10:01 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1666372201484355-9772461704534472615
+
+{
+    "id": 116477
+}
+Request method:	POST
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/courier/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "WYQ9ObCnzz2E",
+    "password": "password1234"
+}
+{
+    "id": 116477
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 13
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Oct 2022 17:10:01 GMT
+ETag: W/"d-1qlqozj50OpjMmNLFl2XQp0gphQ"
+Set-Cookie: _yasc=QMgs2sFMW8/5OB3ha2YC560gZyDRX01CYGy5X7zDQnOapdEJDmiSJt3sXO8=; domain=.praktikum-services.ru; path=/; expires=Mon, 18-Oct-2032 17:10:01 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1666372201796609-9243760147201367807
+
+{
+    "id": 116477
+}
+Request method:	PUT
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/orders/accept?courierId=116477
+Proxy:			<none>
+Request params:	<none>
+Query params:	courierId=116477
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "code": 404,
+    "message": "Not Found."
+}
+HTTP/1.1 404 Not Found
+Access-Control-Allow-Origin: *
+Content-Length: 35
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Oct 2022 17:10:02 GMT
+ETag: W/"23-Yvz185z7FSkcImycPnr136En0mc"
+Set-Cookie: _yasc=e2dgXWHXTVIYXmemVWL/85DFxzysKAoD3Yhr8ptfLcFk9iqu+tiGrvuTqrA=; domain=.praktikum-services.ru; path=/; expires=Mon, 18-Oct-2032 17:10:02 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1666372202225183-4714393382929804553
+
+{
+    "code": 404,
+    "message": "Not Found."
+}
+Request method:	PUT
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/orders/finish/100476
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=100476
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "code": 409,
+    "message": "Этот заказ нельзя завершить"
+}
+HTTP/1.1 409 Conflict
+Access-Control-Allow-Origin: *
+Content-Length: 76
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Oct 2022 17:10:02 GMT
+ETag: W/"4c-PpITYxSj65P3fhwNSmDh8Mg68OA"
+Set-Cookie: _yasc=pm3wSScbdK2sAualZqgkMIIqNHj1GflOETcc0wAChbHh6bCkq95HPpVo1i1L; domain=.praktikum-services.ru; path=/; expires=Mon, 18-Oct-2032 17:10:02 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1666372202530731-2695649554363396323
+
+{
+    "code": 409,
+    "message": "Этот заказ нельзя завершить"
+}
+Request method:	DELETE
+Request URI:	http://qa-scooter.praktikum-services.ru/api/v1/courier/116477
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=116477
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": "116477"
+}
+{
+    "ok": true
+}
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Length: 11
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Oct 2022 17:10:02 GMT
+ETag: W/"b-Ai2R8hgEarLmHKwesT1qcY913ys"
+Set-Cookie: _yasc=5mL7WTiecIvTQTBqbOBr8u7wcnw5q9s3MO/rHvBRGwYPTkXz5wAI8KhxrJ9I; domain=.praktikum-services.ru; path=/; expires=Mon, 18-Oct-2032 17:10:02 GMT; secure
+X-Powered-By: Express
+X-Request-Id: 1666372202878524-15196475833999590024
+
+{
+    "ok": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="shouldNotAcceptOrderWithInvalidCourierId" classname="orders.OrdersAcceptTest" time="2.516"/>
+  <testcase name="shouldNotAcceptOrderWithInvalidOrderId" classname="orders.OrdersAcceptTest" time="2.525"/>
+  <testcase name="shouldAcceptOrder" classname="orders.OrdersAcceptTest" time="3.172"/>
+  <testcase name="shouldNotAcceptAcceptedOrder" classname="orders.OrdersAcceptTest" time="2.801"/>
+</testsuite>
