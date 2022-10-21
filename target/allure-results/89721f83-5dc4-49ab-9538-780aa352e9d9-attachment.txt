@@ -1,0 +1,4 @@
+{
+  "login": "A31t2pDUMedP",
+  "password": "password1234"
+}

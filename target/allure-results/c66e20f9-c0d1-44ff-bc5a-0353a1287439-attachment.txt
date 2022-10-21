@@ -1,0 +1,14 @@
+{
+  "firstName": "чАюЩЦуФХхйпС",
+  "lastName": "мшНАЕгйАГфКЩИТЯъ",
+  "address": "щу0ху3дб",
+  "metroStation": 24,
+  "phone": "254409259697",
+  "rentTime": 5,
+  "deliveryDate": "2023-08-22",
+  "comment": "ШДыСм1й2адпЬТСШАз8ъжч9ц",
+  "color": [
+    "BLACK",
+    "GREY"
+  ]
+}

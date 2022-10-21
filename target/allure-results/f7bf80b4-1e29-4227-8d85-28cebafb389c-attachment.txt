@@ -1,0 +1,5 @@
+{
+  "login": "m8RHEplhyc4g",
+  "password": "password1234",
+  "firstName": "яСёНИЦПШРЙбгДеЩПйЬШшЬЬ"
+}
